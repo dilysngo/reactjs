@@ -19,7 +19,7 @@
 ## Clone
 
 ```
-git clone https://github.com/dilysbi/Reactjs-BASE-FE.git
+git clone https://github.com/dilysbi/Reactjs-BASE-mini.git
 
 with yarn:
 
