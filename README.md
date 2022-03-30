@@ -1,6 +1,14 @@
 # Reactjs BASE SRC
 
 [![Version](https://img.shields.io/npm/v/reactjs-base-src)](https://github.com/dilysbi/Reactjs-BASE-FE)
+![Forks](https://img.shields.io/github/forks/dilysbi/Reactjs-BASE-mini?style=social)
+
+<div align="Center">
+<h1>REACTJS BASE</h1>
+<h3> React base </h3>
+</div>
+
+<br>
 
 Reactjs BASE SRC is repo for fasting build production that includes, babel, eslint, prettier, v.v...
 
