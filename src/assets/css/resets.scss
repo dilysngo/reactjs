@@ -1,0 +1,11 @@
+p {
+  color: #a5adcf;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 0;
+  @include media-up(sm) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

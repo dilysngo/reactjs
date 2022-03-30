@@ -1,0 +1,76 @@
+.box-form-control {
+  p {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .ant-select {
+    width: 100%;
+
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+      }
+    }
+
+    .ant-select-selector {
+      height: 46px;
+      background: rgba(47, 50, 65, 0.5);
+      border: 1px solid #34384c;
+      box-sizing: border-box;
+      color: #ffffff;
+      font-family: 'Graphik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 27px;
+      border-radius: 100px !important;
+      padding: 0 0 0 32px;
+    }
+
+    .ant-select-arrow {
+      color: #ffffff;
+      right: 32px;
+    }
+  }
+
+  @media (min-width: 991px) {
+    p {
+      font-size: 18px;
+    }
+
+    .ant-select {
+      .ant-select-selector {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+}
+
+.ant-select-item {
+  padding: 0 0 0 32px;
+  display: flex;
+  align-items: center;
+
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+    }
+  }
+}

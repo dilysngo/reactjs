@@ -1,0 +1,43 @@
+@import 'assets/css/variables.scss';
+
+.wrapper-input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(47, 50, 65, 0.5);
+  border: 1px solid #34384c;
+  border-radius: 100px;
+
+  &[data-size='larger'] {
+    padding: 8px 8px 8px 32px;
+    height: 57px;
+    @include media-up(sm) {
+      height: 67px;
+    }
+  }
+
+  input {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: unset;
+
+    &:hover,
+    &:valid {
+      outline: unset;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: 'color 9999s ease-out, background-color 9999s ease-out';
+    -webkit-transition-delay: 9999s;
+  }
+}

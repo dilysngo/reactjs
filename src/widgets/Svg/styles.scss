@@ -1,0 +1,12 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+svg {
+  flex-shrink: 0;
+  // animation: rotate 2s linear infinite;
+}

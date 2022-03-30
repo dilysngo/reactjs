@@ -1,0 +1,67 @@
+$breakpoints: (
+  xs: 0,
+  xm: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px,
+) ;
+
+/* Mobile first */
+@mixin media-up($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    @media (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      @content;
+    }
+  } 
+
+  @else if $breakpoint != null {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Media-up: Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+/* Desktop first */
+@mixin media-down($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    @media (max-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint != null {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Media-down: Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin media-between($breakpoint-down, $breakpoint-up) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint-down) & map-has-key($map: $breakpoints, $key: $breakpoint-up) {
+    @media (min-width: map-get($map: $breakpoints, $key: $breakpoint-down)) and (max-width: map-get($map: $breakpoints, $key: $breakpoint-up)) {
+      @content;
+    }
+  }
+
+  @else if ($breakpoint-down != null) & ($breakpoint-down != null) {
+    @media (min-width: $breakpoint-down and (max-width: $breakpoint-down)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Media-between: Unfortunately, no value could be retrieved from.";
+  }
+} 

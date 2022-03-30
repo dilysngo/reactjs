@@ -1,0 +1,51 @@
+@import 'assets/css/variables.scss';
+
+.button-primary {
+  color: #ffffff;
+
+  font-weight: 600;
+
+  width: 100%;
+  padding: 3px;
+  background: linear-gradient(90deg, #52ffc0 0%, #00c291 100%);
+  border-radius: 100px;
+  cursor: pointer;
+
+  outline: unset;
+  border: unset;
+
+  &[data-size='small'] {
+    font-size: 10px;
+    line-height: 20px;
+    height: 22px;
+    @include media-up(sm) {
+      font-size: 12px;
+      height: 32px;
+    }
+  }
+  &[data-size='standard'] {
+    font-size: 14px;
+    line-height: 22px;
+    height: 37px;
+    @include media-up(sm) {
+      font-size: 16px;
+      height: 47px;
+    }
+  }
+  &[data-size='larger'] {
+    font-size: 16px;
+    line-height: 24px;
+    height: 57px;
+    @include media-up(sm) {
+      font-size: 18px;
+      height: 67px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,61 @@
+@import 'assets/css/variables.scss';
+
+.footer-container {
+  overflow: hidden;
+
+  .footer-content {
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 14px 0px;
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    padding: 30px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 20px;
+
+    border-top: 1px solid #34384c;
+
+    @include media-up(sm) {
+      flex-direction: row;
+    }
+
+    p {
+      color: #5d6588;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-bottom-right {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row nowrap;
+      .hr-hor {
+        display: block;
+        width: 1px;
+        height: 20px;
+        margin: 0 10px;
+        background: #5d6588;
+      }
+      a {
+        color: #5d6588;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import './mixins/class';
+@import './mixins/mixins';
+@import './mixins/breakpoints';
+
+$MENU-HEIGHT: 80px;
+
+$text-main: #ffffff;
+
+$primary: red;
+$secondary: #141518;
+
+$success: #31d0aa;
+$failure: #ed4b9e;
+$warning: #ff4d4f;
+
+$background-card: #1e1f25;

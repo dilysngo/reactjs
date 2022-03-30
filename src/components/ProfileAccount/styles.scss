@@ -1,0 +1,32 @@
+@import 'assets/css/variables.scss';
+
+.profile-account {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  .account-name {
+    color: #ffffff;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    white-space: nowrap;
+    margin-right: 10px;
+    padding-top: 3px;
+    cursor: pointer;
+  }
+  .account-cover {
+    display: flex;
+    padding: 2px;
+    border-radius: 100%;
+    background: linear-gradient(to right, rgba(82, 255, 192, 1) 0%, rgba(0, 194, 145, 1) 100%);
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      width: 42px;
+      height: 42px;
+      border-radius: 100%;
+      border: 3px solid #141518;
+    }
+  }
+}

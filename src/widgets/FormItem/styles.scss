@@ -1,0 +1,89 @@
+@import 'assets/css/variables.scss';
+
+.wrapper-form-item {
+  .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none;
+  }
+  label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      color: #5d6588;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+
+      @include media-up(sm) {
+        font-size: 18px;
+      }
+    }
+    &.ant-form-item-required span {
+      position: relative;
+      &:before {
+        content: '*';
+        color: #ff4d4f;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1;
+        position: absolute;
+        right: -10px;
+      }
+    }
+
+    button {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 21px;
+      text-align: center;
+
+      max-width: 80px;
+      height: 30px;
+      padding: 0 20px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      @include media-up(sm) {
+        font-size: 14px;
+        height: 40px;
+        max-width: 110px;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    .btn-active {
+      color: #ffffff;
+      background: transparent;
+      border: 1px solid #a5adcf;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .btn-disable {
+      color: #fa2256;
+      background: transparent;
+      border: 1px solid #fa2256;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+
+  // .ant-form-item-explain-error {
+  .ant-form-item-explain {
+    font-size: 12px;
+    padding-left: 32px;
+    @include media-up(sm) {
+      font-size: 14px;
+    }
+  }
+}
