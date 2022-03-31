@@ -1,4 +1,4 @@
-# Reactjs BASE SRC
+# Reactjs BASE mini
 
 [![Version](https://img.shields.io/npm/v/reactjs-base-src)](https://github.com/dilysbi/Reactjs-BASE-mini)
 ![size](https://img.shields.io/github/languages/code-size/dilysbi/Reactjs-BASE-mini)
