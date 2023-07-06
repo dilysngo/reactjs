@@ -72,7 +72,6 @@ function App() {
       <IntlProvider locale={language || 'en'} messages={languages[language]}>
         <Router>
           <Switch>
-            {/* Public */}
             <PublicRoute exact path="/" component={Home} />
             <PublicRoute exact path="/signup" component={SignUp} />
             <PublicRoute exact path="/login" component={SignIn} />
@@ -82,10 +81,8 @@ function App() {
             <PublicRoute exact path="/coming-soon" component={ComingSoon} />
             <PublicRoute exact path="/404" component={Page404} />
 
-            {/* Private */}
             <PublicRoute exact path="/account" component={Account} />
 
-            {/* Other */}
             <Route path="" component={() => <Redirect to="/" />} />
           </Switch>
         </Router>
