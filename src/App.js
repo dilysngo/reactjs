@@ -78,7 +78,7 @@ function App() {
             <PublicRoute exact path="/forgot-password" component={ForgotPassword} />
             <PublicRoute exact path="/reset-password" component={ResetPassword} />
 
-            {/* <PublicRoute exact path="/coming-soon" component={ComingSoon} /> */}
+            <PublicRoute exact path="/coming-soon" component={ComingSoon} />
             <PublicRoute exact path="/404" component={Page404} />
 
             <PublicRoute exact path="/account" component={Account} />
