@@ -10,7 +10,7 @@
 ![contributors](https://img.shields.io/github/contributors-anon/dilysbi/Reactjs-BASE-mini)
 
 <div align="Center">
-<h1>REACTJS BASE</h1>
+<h1>REACTJS</h1>
 <h3> Reactjs BASE SRC is repo for fasting build production that includes, babel, eslint, prettier, v.v... </h3>
 </div>
 
