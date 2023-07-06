@@ -83,7 +83,7 @@ function App() {
             <PublicRoute exact path="/404" component={Page404} />
 
             {/* Private */}
-            <PrivateRoute exact path="/account" component={Account} />
+            <PublicRoute exact path="/account" component={Account} />
 
             {/* Other */}
             <Route path="" component={() => <Redirect to="/" />} />
