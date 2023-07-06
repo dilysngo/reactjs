@@ -7,6 +7,7 @@ import configureStore from './state/store';
 import reportWebVitals from './reportWebVitals';
 
 const initialState = {};
+
 const store = configureStore(initialState);
 
 ReactDOM.render(
