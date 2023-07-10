@@ -84,7 +84,6 @@ function App() {
             <PublicRoute exact path="/account" component={Account} />
 
             <Route path="" component={() => <Redirect to="/" />} />
-
           </Switch>
         </Router>
       </IntlProvider>

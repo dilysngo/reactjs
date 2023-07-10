@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 
 const ProfileAccount = ({ className }) => (
-  <a href="https://github.com/dilysbi" className={`${className || ''} profile-account`}>
+  <a href="https://github.com/dilysngo" className={`${className || ''} profile-account`}>
     <div className="account-name">
       <span>Dilys Ngo</span>
     </div>
